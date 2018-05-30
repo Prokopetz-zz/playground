@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    background-color: blueviolet;
+}
+.header{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 10%;
+    font-size: 5vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    
+}
+.header a{
+    text-decoration: none;
+    color: blueviolet;
+}
+.header button{
+    background-color: blueviolet;
+    transition-duration: 0.3s;
+    color: white;
+    height: 50%;
+    border-radius: 16px;
+}
+.header button:hover{
+    background-color: white;
+    color: black;
+}
+
+.header img{
+
+    width: 6vh;
+    height: 6vh;
+
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content .top{
+    display: flex;
+    background-image: url("imgs/wedding.jpg");
+    height: 70%;
+    max-width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5vh;
+    margin-bottom: 17vh;
+}
+
+.content .mid{
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 2vw;
+    color: white;
+}
+
+.content .bottom{
+    display: flex;
+    align-items: center;
+    font-size: 3vh;
+    height: 80%;
+    justify-content: space-around;
+    align-content: center;
+    margin: 3rem;
+}
+
+
+
