@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    background-color: blueviolet;
+    background-color: #003366;
+    padding: 0;
 }
 .header{
 
@@ -23,7 +24,7 @@ body{
     background-color: blueviolet;
     transition-duration: 0.3s;
     color: white;
-    height: 50%;
+    height: 2.5vw;
     border-radius: 16px;
 }
 .header button:hover{
@@ -32,10 +33,7 @@ body{
 }
 
 .header img{
-
-    width: 6vh;
-    height: 6vh;
-
+    width: 4vw;
 }
 
 
@@ -47,49 +45,104 @@ body{
 .content .top{
     display: flex;
     background-image: url("../imgs/wedding.jpg");
-    height: 80%;
+    height: 100vh;
     max-width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 5vh;
-    margin-bottom: 17vh;
 }
+
+
 
 .content .mid{
     display: flex;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin: 2vw;
     font-size: 2vw;
-    color: white;
+    color: white;   
 }
 
-.content .bottom{
+
+
+.content .gallery{
     display: flex;
-    align-items: center;
-    font-size: 3vh;
-    height: 100%;
     justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+}
+.content .gallery-img{
+    width: 25vw;
+    height: 40vh;
+    
+}
+
+
+
+.content .bottom{
+    background-color: #003366;
+    display: flex;
+    font-size: 3vh;
+    height: 90%;
+    color:white;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 .content .bottom .left{
     display: flex;
     flex-direction: column;
-}
-.content .bottom .left .input-info{
-    height: 5vh;    
-    width: 20vw;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
 }
 .content .bottom .left .input-text{
-    width: 30vw;
-    height: 25vh;
-    margin-bottom: 2vh;
+    color: whitesmoke;
+    height: 2rem;    
+    width: 16rem;
+    box-sizing: border-box;
+    outline: 0;
+    border: none;
+    background-color: #003366;
+    font-size: 16px;
+    margin: 1px;
 }
-.content .bottom .left button{
-    width: 10vh;
-    margin-left: 24vh; 
+.content .bottom .input-text + label {
+    display: flex;
+    white-space: nowrap;
+    width: 25%;
+    border-top: 1px solid blueviolet;
+    transition: width 0.4s ease;
+  }
+  .content .bottom .input-text:focus + label {
+    width: 100%;
+  }
+  .content .bottom .input-text:hover + label {
+    width: 100%;
+  }
 
+.content .bottom .left button{
+    width: 20vw;
+    align-self: center;
+    height: 5vh;
+    border-radius: 30px;
+    border-color: blueviolet;
+    background-color: blueviolet;
+    outline: 0;
+    color: whitesmoke;
+    
+
+}
+.content .bottom .left .more-info{
+    font-size: 1rem;
+    color: grey;
+}
+.content .bottom .right{
+    align-content: center;
+    width: 50%;
+    height: 100%;
+}
+.content .bottom .right iframe{
+    height: 100%;
+    width: 100%;
 }

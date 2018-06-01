@@ -9,6 +9,10 @@ justify-content: center;
 .content{
     align-self: center;
     background-color: white;
-    width: 35vw;
-    height: 35vh;
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+}
+.content .signin{
+    align-self: center;
 }
